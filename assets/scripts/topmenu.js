@@ -1,12 +1,12 @@
 function sellyourcrop_onclick(){
-    location.replace("http://127.0.0.1:5500/sellyourcrop.html")
+    location.replace("https://farmvio.azurewebsites.net/sellyourcrop.html")
 }
 
 function map_onclick(){
-    location.replace("http://127.0.0.1:5500/index.html")
+    location.replace("https://farmvio.azurewebsites.net/index.html")
 
 }
 function signupStandard_onclick(){
-    location.replace("http://127.0.0.1:5500/sellcropdash.html")
+    location.replace("https://farmvio.azurewebsites.net/sellcropdash.html")
 
 }
