@@ -23,6 +23,54 @@ body {
   background-color: #0072B5;
 }
 
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #D2386C;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #00A170;
+}
+
 /* Create two equal columns that floats next to each other */
 /* Create two unequal columns that floats next to each other */
 .column {
@@ -132,7 +180,7 @@ body {
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 #4CAF50;
   
 }
 
@@ -451,6 +499,29 @@ padding: 15px 15px 15px 15px;
     
 }
 
+.grid-producer-register {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-gap: 2px;
+  background-color: white;
+  padding: 7px;
+  margin-top: 100px;
+  
+
+}
+.grid-producer-register > div {
+  background-color: white;
+  color:#D2386C;
+  float: left;
+  font-size: 16px;
+    
+}
+.producer-register-middle{
+  border: 1px solid #00A170;
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: 0 8px 16px 0 #4CAF50
+}
 .columns {
   float: left;
   width: 33.3%;
@@ -493,4 +564,22 @@ padding: 15px 15px 15px 15px;
   .columns {
     width: 100%;
   }
+}
+
+
+.grid-container-producer-page {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 2px;
+  background-color: white;
+  padding: 7px;
+  border: 1px solid #00A170;
+
+}
+.grid-container-producer-page > div {
+  background-color: white;
+  color:#D2386C;
+  float: left;
+  font-size: 16px;
+    
 }
