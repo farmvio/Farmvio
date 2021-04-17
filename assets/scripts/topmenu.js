@@ -1,5 +1,5 @@
 function sellyourcrop_onclick(){
-    location.replace("http://127.0.0.1:5500/sellyourcrop.html")
+    location.replace("http://127.0.0.1:5500/sellcropdash.html")
 }
 
 function map_onclick(){
