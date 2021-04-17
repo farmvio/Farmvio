@@ -37,10 +37,12 @@
   }
   
   /* Fake image */
-  .fakeimg {
-    background-color: #0072B5;
+  .content {
+    background-color: white;
     width: 100%;
     padding: 20px;
+    border: 1px solid #00A170;
+    border-radius: 5px;
   }
   
   /* Add a card effect for articles */
