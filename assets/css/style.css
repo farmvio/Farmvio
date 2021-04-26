@@ -3,6 +3,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  
  
 }
 .full-height{
@@ -503,14 +504,14 @@ padding: 15px 15px 15px 15px;
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-gap: 2px;
-  background-color: white;
+  background-color: #9BB7D4;
   padding: 7px;
-  margin-top: 100px;
+  
   
 
 }
 .grid-producer-register > div {
-  background-color: white;
+  background-color: #9BB7D4;
   color:#D2386C;
   float: left;
   font-size: 16px;
@@ -520,7 +521,8 @@ padding: 15px 15px 15px 15px;
   border: 1px solid #00A170;
   text-align: center;
   border-radius: 7px;
-  box-shadow: 0 8px 16px 0 #4CAF50
+  box-shadow: 0 8px 16px 0 #4CAF50;
+  
 }
 .columns {
   float: left;

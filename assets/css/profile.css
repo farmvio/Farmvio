@@ -1,80 +1,210 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #9BB7D4;
+}
+
+/* Header/logo Title */
+.header {
+  text-align: center;
+  background: white;
+  color: white;
+  margin: 2px 2px 2px 2px;
+  padding: 0px;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+.grid-container-profile-body {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+
+  background-color: #9BB7D4;
+}
+
+.grid-container-profile-body > div {
+  background-color:#9BB7D4;
+  color:#D2386C;
+  float: left;
   
-  /* Add a gray background color with some padding */
-  body {
-    font-family: Arial;
-    padding: 20px;
-    background: white;
-  }
-  
-  /* Header/Blog Title */
-  .header {
-    padding: 5px;
-    font-size: 40px;
-    text-align: center;
-    background: white;
-    border: 1px solid #00A170;
-    border-radius: 5px;
-    box-shadow: 0 7px 10px 0 #4CAF50,0 12px 16px 0 #4CAF50;
     
+}
+
+.grid-container-profile-body-content {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-gap: 2px;
+  background-color: #9BB7D4;
+}
+
+.grid-container-profile-body-content > div {
+  background-color:white;
+  color:#D2386C;
+  float: left;
+  
     
-  }
+}
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  border: 1px solid #00A170;
+  border-radius: 7px;
+  margin: 2px 2px 2px 2px;
+  padding: 10px;
+  color: #D2386C;
+}
+
+
+
+.btn-control-panel{
+  border: 1px solid #00A170;
+  border-radius: 7px;
+  color: #D2386C;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.btn-control-panel:hover{
+  box-shadow: 0 12px 16px 0 #00A170, 0 17px 50px 0 #00A170;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #00A170;
+  border-radius: 7px;
+  margin-top: 2px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  color: #D2386C;
+  border: 1px solid #00A170;
+  border-radius: 7px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  border: 1px solid #00A170;
+  border-radius: 7px;
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  color: #D2386C;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  border: 1px solid #00A170;
+  border-radius: 7px;
+}
+
+.grid-container-profile-social {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 2px;
+  background-color: white;
+  padding: 7px;
+
   
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {   
-    float: left;
-    width: 25%;
-  }
+
+}
+.grid-container-profile-social > div {
+  background-color: white;
+  color:#D2386C;
+  float: left;
   
-  /* Right column */
-  .rightcolumn {
-    float: left;
-    width: 75%;
-    padding-left: 20px;
-  }
+    
+}
+
+.grid-container-profile-social a{
+  color: #D2386C;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.grid-container-profile-social a:hover{
+  color: #00A170;
+  font-size: 15px;
+}
+
+.grid-container-profile-social a:visited{
+  text-decoration: none;
+  font-size: 15px;
+}
+.profile-name{
+  font-size: 20px;
+  color:#D2386C;
+  font-weight: bold;
+}
+
+.grid-container-profile-main {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2px;
+  background-color: white;
   
-  /* Fake image */
-  .content {
-    background-color: white;
+  
+
+}
+.grid-container-profile-main > div {
+  background-color: white;
+  color:#D2386C;
+  float: left;
+  
+    
+}
+.item-description {
+  grid-column: 1 / 5;
+  margin-top: 7px;
+  border-top: 1px solid #00A170;
+  padding-top: 7px;
+  text-align: justify;
+}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar  .btn-control-panel{
+    float: none;
     width: 100%;
-    padding: 20px;
-    border: 1px solid #00A170;
-    border-radius: 5px;
   }
-  
-  /* Add a card effect for articles */
-  .card {
-     background-color: white;
-     padding: 20px;
-     margin-top: 20px;
-     border: 1px solid #00A170;
-     box-shadow: 0 7px 10px 0 #4CAF50,0 12px 16px 0 #4CAF50;
-     border-radius: 5px;
-     color: #D2386C;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
-  }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
-    }
-  }
+}
